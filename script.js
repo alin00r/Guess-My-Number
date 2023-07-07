@@ -3,7 +3,7 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
 const displayMessage = function (message) {
-  displayMessage() = message;
+   document.querySelector('.number').textContent = message;
 };
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
@@ -28,7 +28,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = score;
     } else {
       displayMessage('😌 Hard Luck !');
-      document.querySelector('body').style.backgroundColor = '#400';
+      document.querySelector('body').style.backgroundColor = '#FF0000';
       document.querySelector('.score').textContent = 0;
     }
   }
